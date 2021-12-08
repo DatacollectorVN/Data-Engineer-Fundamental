@@ -9,3 +9,4 @@
 + [Lab-1-Create-Databases-Stores-and-Dump/Backup](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0110EN-SkillsNetwork/labs/Lab%20-%20Getting%20started%20with%20PostgreSQL%20command%20line/instructional-labs.md.html)
 + [Lab-2-Create-Tables-and-Load-Data](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0110EN-SkillsNetwork/labs/Lab%20-%20Create%20Tables%20and%20Load%20Data%20in%20PostgreSQL%20using%20pgAdmin/instructional-labs.md.html)
 + [Lab-3-Views-and-Materialized-Views](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0110EN-SkillsNetwork/labs/Lab%20-%20Views%20in%20PostgreSQL/instructional-labs.md.html)
++ [Lab-4-Database-Design-Using-ERDs](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0110EN-SkillsNetwork/labs/Lab%20-%20Database%20Design%20using%20ERDs%20/instructional-labs.md.html)
