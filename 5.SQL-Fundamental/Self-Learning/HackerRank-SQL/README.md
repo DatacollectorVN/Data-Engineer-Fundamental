@@ -33,6 +33,7 @@ Source [here](https://www.hackerrank.com/challenges/weather-observation-station-
 You will get wrong answer.
 
 ## Problem 5: Euclidean Distance
+Source [here](https://www.hackerrank.com/challenges/weather-observation-station-19/problem).
 **Euclidean Distance:** In the Euclidean plane, let point p have Cartesian coordinates(p1, p2) and let point q have coordinates (q1, q2) - Wikipedia. 
 
 <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Euclidean_Distance.png?raw=true" alt="drawing" width="300"/>
@@ -40,6 +41,7 @@ You will get wrong answer.
 *Note:* In this problem, I use the same table from *Problem4*.
 
 ## Problem 6: Calculate Median
+Source [here](https://www.hackerrank.com/challenges/weather-observation-station-20/problem).
 **Median:** The median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution - Wikipedia. 
 
 To calculate median, following these steps:
@@ -58,3 +60,9 @@ So we create the *Virtual table* by the reuslt of query (see in `Problem6/get_in
 *Other solution:* I see some people apply the magic way by two sub-queries to create the *Virtual table*. See in `Problem6/other_solution.sql`
 
 *Note:* In this problem, I use the same table from *Problem4*.
+
+## Problem 7: Condition (IF or CASE WHEN statement)
+Source [here](https://www.hackerrank.com/challenges/the-report/problem).
+
++ Use `IF()`, see in `Problem7/solution.sql`.
++ Use `CASE WHEN`, see in `Problem7/other_solution.sql`.
