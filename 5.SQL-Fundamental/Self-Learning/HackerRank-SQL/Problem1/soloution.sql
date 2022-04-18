@@ -1,4 +1,5 @@
--- NOTE: THIS is stupid solution cause I know the how many apperance time of professor column
+-- NOTE: THIS is stupid solution cause I know the apperance time of professor column is highest.
+-- That's why we can apply outter join.
 SELECT Doctor_.Name AS Doctor , Professor_.Name AS Professor, Singer_.Name AS Singer, Actor_.Name AS Actor
 FROM (SELECT ROW_NUMBER() OVER () AS new_column, Name
 	FROM hackerrank.OCCUPATIONS

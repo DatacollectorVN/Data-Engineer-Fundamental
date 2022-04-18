@@ -1,7 +1,7 @@
 USE hackerrank;
 -- Create and insert Company table
 CREATE TABLE IF NOT EXISTS Company(
-	conpany_code CHAR(100),
+	company_code CHAR(100),
     founder CHAR(100)
 );
 INSERT INTO Company VALUES ('C1', 'Monika');

@@ -5,3 +5,4 @@ This folder contains all my-own self-learning about SQL.
 + [1.MySQL-Variable](https://www.delftstack.com/howto/mysql/mysql-declare-variable/)
 + [1.4.MySQL-Variable-from-result-of-query](https://stackoverflow.com/questions/3888735/mysql-set-user-variable-from-result-of-query)
 + [2.MySQL-CONCAT](https://www.w3schools.com/sql/func_mysql_concat.asp)
++ [3.MySQL-GROUP_CONCAT](https://www.geeksforgeeks.org/mysql-group_concat-function/)

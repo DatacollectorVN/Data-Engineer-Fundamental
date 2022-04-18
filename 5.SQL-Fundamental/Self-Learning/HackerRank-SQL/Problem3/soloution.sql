@@ -1,9 +1,9 @@
 USE hackerrank;
 SELECT c.company_code, c.founder,
-COUNT(distinct lm.lead_manager_code) AS 'Total number lead managers',
-COUNT(distinct sm.senior_manager_code) AS 'Total number senior managers',
-COUNT(distinct m.manager_code) AS 'Total number managers', 
-COUNT(distinct e.employee_code) AS 'Total number senior employeess'
+COUNT(DISTINCT lm.lead_manager_code) AS 'Total number lead managers',
+COUNT(DISTINCT sm.senior_manager_code) AS 'Total number senior managers',
+COUNT(DISTINCT m.manager_code) AS 'Total number managers', 
+COUNT(DISTINCT e.employee_code) AS 'Total number senior employeess'
 FROM Company AS c, Lead_Manager AS lm, Senior_Manager AS sm, Manager AS m, Employee AS e
 WHERE
 c.company_code = lm.company_code AND
