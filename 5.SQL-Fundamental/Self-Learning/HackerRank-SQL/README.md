@@ -49,7 +49,7 @@ To calculate median, following these steps:
 
 *See example in figure below:*
 
-![plot](https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/median.png?raw=true)
+<img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/median.png?raw=true" alt="drawing" width="300"/>
 
 Based on the characteristics of median, we will compute easily when we have the index of table (after sorting ascendingly the target column). 
 So we create the *Virtual table* by the reuslt of query (see in `Problem6/get_index.sql`) and apply this sub-query into the **SELECT ...FROM \<subquery>** (see in `Problem6/solution.sql`).
