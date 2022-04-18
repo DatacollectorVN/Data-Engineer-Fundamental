@@ -48,8 +48,9 @@ To calculate median, following these steps:
 + If \# data sample is even, then the medial value is the average couple of middle values.
 
 *See example in figure below:*
-
-<img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/median.png?raw=true" alt="drawing" width="300"/>
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/median.png?raw=true" alt="drawing" width="300"/>
+</p>
 
 Based on the characteristics of median, we will compute easily when we have the index of table (after sorting ascendingly the target column). 
 So we create the *Virtual table* by the reuslt of query (see in `Problem6/get_index.sql`) and apply this sub-query into the **SELECT ...FROM \<subquery>** (see in `Problem6/solution.sql`).
