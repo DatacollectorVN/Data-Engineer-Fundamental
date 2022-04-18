@@ -35,7 +35,7 @@ You will get wrong answer.
 ## Problem 5: Euclidean Distance
 **Euclidean Distance:** In the Euclidean plane, let point p have Cartesian coordinates(p1, p2) and let point q have coordinates (q1, q2) - Wikipedia. 
 
-![plot](https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Euclidean_Distance.png?raw=true)
+<img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Euclidean_Distance.png?raw=true" alt="drawing" width="300"/>
 
 *Note:* In this problem, I use the same table from *Problem4*.
 
