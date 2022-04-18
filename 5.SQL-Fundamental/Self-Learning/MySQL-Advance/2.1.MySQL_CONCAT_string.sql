@@ -1,0 +1,1 @@
+SELECT CONCAT("Nathan", " ", "Ngo") AS ConcatenatedString;
