@@ -34,6 +34,7 @@ You will get wrong answer.
 
 ## Problem 5: Euclidean Distance
 Source [here](https://www.hackerrank.com/challenges/weather-observation-station-19/problem).
+
 **Euclidean Distance:** In the Euclidean plane, let point p have Cartesian coordinates(p1, p2) and let point q have coordinates (q1, q2) - Wikipedia. 
 
 <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Euclidean_Distance.png?raw=true" alt="drawing" width="300"/>
@@ -42,6 +43,7 @@ Source [here](https://www.hackerrank.com/challenges/weather-observation-station-
 
 ## Problem 6: Calculate Median
 Source [here](https://www.hackerrank.com/challenges/weather-observation-station-20/problem).
+
 **Median:** The median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution - Wikipedia. 
 
 To calculate median, following these steps:
