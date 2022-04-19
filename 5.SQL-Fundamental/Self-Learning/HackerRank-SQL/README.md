@@ -86,7 +86,7 @@ Source [here](https://www.hackerrank.com/challenges/full-score/problem)
 + Integrate all fields that we need, use INNER JOIN with 4 tables - See the figure below. 
 
 <p align = "center">
-    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Inner_Join.png?raw=true" alt="drawing" width="500"/>
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Inner_Join.png?raw=true" alt="drawing" width="600"/>
 </p>
 
 *Note:* In the requirement, *queries the hackers who achieved full scores*. Therefore, we apply INNER JOIN between *Virtual table* (inside red rectangle dash line) and *Difficulty* table with 2 columns - *dificulty_level* and *score* column.
