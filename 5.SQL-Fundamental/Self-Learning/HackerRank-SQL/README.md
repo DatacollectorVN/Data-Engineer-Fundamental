@@ -69,7 +69,7 @@ Source [here](https://www.hackerrank.com/challenges/the-report/problem).
 + Use `IF()`, see in `Problem-7/solution.sql`.
 + Use `CASE WHEN`, see in `Problem-7/other_solution.sql`.
 
-## Problem 8: GROUP BY and JOIN with multiple tables
+## Problem 8: GROUP BY and JOIN with multiple tables - 1
 Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 
 *Explanation:*
@@ -78,3 +78,5 @@ Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 + After combining 2 tables, have a table with multiple duplication of values in *hacker_id* and *name* columns because each hacker solve many challegenes. Therefore, we group both 2 column by GROUP BY and add options HAVING \<condition> and ORDER BY \<column>.
 
 *Note:* The sorting algorithm in ORDER BY have the priority rules with ORDER BY \<*col_1*>, \<*col_2*>. The algorithm will priority to sort the \<*col_1*> first.
+
+## Problem 9: GROUP BY and JOIN with multiple tables - 2
