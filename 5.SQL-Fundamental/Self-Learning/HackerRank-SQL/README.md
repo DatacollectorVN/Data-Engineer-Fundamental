@@ -80,3 +80,22 @@ Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 *Note:* The sorting algorithm in ORDER BY have the priority rules with ORDER BY \<*col_1*>, \<*col_2*>. The algorithm will priority to sort the \<*col_1*> first.
 
 ## Problem 9: GROUP BY and JOIN with multiple tables - 2
+Source [here](https://www.hackerrank.com/challenges/full-score/problem)
+
+*Explanation:*
++ Integrate all fields that we need, use INNER JOIN with 4 tables - See the figure below. 
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Inner_Join.png?raw=true" alt="drawing" width="500"/>
+</p>
+
+*Note:* In the requirement, *queries the hackers who achieved full scores*. Therefore, we apply INNER JOIN between *Virtual table* (inside red rectangle dash line) and *Difficulty* table with 2 columns - *dificulty_level* and *score* column.
+
++ To query the hacker achieved full scores *for more than one challegne*, we applied COUNT() > 1.
+
+## Problem 10: GROUP BY and JOIN with multiple tables - 10 (Hard level)
+Source [here](https://www.hackerrank.com/challenges/interviews/problem)
+
+*Explanation:*
++ We generate 3 *virtual tables* for solving this problem. First *virtual table* contains all necessary fields from 3 tables *Contest*, *Colleges* and *Challenges*. Second *virtual table* by transforming the *View_Stats* table with GROUP BY statement to calculate total of value. Third *virtual table* by transforming the *Submission_Stats* table with GROUP BY satemet to calculate total of value.
++ Concatenate 3 *virtual tables* above and use HAVING and ORDER BY to statisfy the requirements.
