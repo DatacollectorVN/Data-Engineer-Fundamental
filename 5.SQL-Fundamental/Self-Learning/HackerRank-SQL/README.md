@@ -39,7 +39,7 @@ Source [here](https://www.hackerrank.com/challenges/weather-observation-station-
 
 <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/Euclidean_Distance.png?raw=true" alt="drawing" width="300"/>
 
-*Note:* In this problem, I use the same table from *Problem4*.
+*Note:* In this problem, I used the same table from *Problem4*.
 
 ## Problem 6: Calculate Median
 Source [here](https://www.hackerrank.com/challenges/weather-observation-station-20/problem).
@@ -61,7 +61,7 @@ So we create the *Virtual table* by the reuslt of query (see in `Problem-6/get_i
 
 *Other solution:* I see some people apply the magic way by two sub-queries to create the *Virtual table*. See in `Problem-6/other_solution.sql`
 
-*Note:* In this problem, I use the same table from *Problem4*.
+*Note:* In this problem, I used the same table from *Problem4*.
 
 ## Problem 7: Condition (IF or CASE WHEN statement)
 Source [here](https://www.hackerrank.com/challenges/the-report/problem).
