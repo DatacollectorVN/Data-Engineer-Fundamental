@@ -1,2 +1,6 @@
-SELECT ROUND(SQRT(POWER((MIN(lat_n) - MAX(lat_n)), 2) + POWER((MIN(long_w) - MAX(long_w)), 2)), 4) 
-FROM hackerrank.STATION
+USE hackerrank;
+SELECT IF (grades.grade < 8, NULL , students.name),
+    grades.grade, students.marks 
+FROM students, grades
+WHERE students.marks BETWEEN grades.min_mark AND grades.max_mark
+ORDER BY grades.grade DESC, students.name ASC;

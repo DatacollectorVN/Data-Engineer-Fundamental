@@ -2,7 +2,7 @@
 This folder contains all my-own self-learning about SQL.
 
 # Hacker Rank SQL:
-*NOTE:* All SQL solutions, I code with MySQL tool.
+*NOTE:* All SQL solutions, I used with MySQL tool.
 ## Problem 1: Pivot table
 Source [here](https://www.hackerrank.com/challenges/occupations/problem).
 
@@ -68,3 +68,13 @@ Source [here](https://www.hackerrank.com/challenges/the-report/problem).
 
 + Use `IF()`, see in `Problem-7/solution.sql`.
 + Use `CASE WHEN`, see in `Problem-7/other_solution.sql`.
+
+## Problem 8: GROUP BY and JOIN with multiple tables
+Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
+
+*Explanation:*
++ In the **Submissions** table, it have multiple duplication of both *hacker_id* and *challenge_id* columns because some hacker want to improve their score such as *hacker_id* = 4806 and *challenge_id* = 49593 have twice *score* with the second *scorce* improves from 32 to 76. That's why we must create the *Virtual table* from **Submissions** table by GROUP BY *hacker_id* and *challenge_id*.
++ Combine 2 tables *Virtual table* and **Hackers** table by INNER JOIN with *Foriegn Key* is *hacker_id*. See my own [document](https://docs.google.com/document/d/1fOvsIbR195h66QcRj8iDAQg_InL9b7Lwc-Kz-2E6wOg/edit#heading=h.p7621eiw65uu) to understand the *Foriegn Key*.
++ After combining 2 tables, have a table with multiple duplication of values in *hacker_id* and *name* columns because each hacker solve many challegenes. Therefore, we group both 2 column by GROUP BY and add options HAVING \<condition> and ORDER BY \<column>.
+
+*Note:* The sorting algorithm in ORDER BY have the priority rules with ORDER BY \<*col_1*>, \<*col_2*>. The algorithm will priority to sort the \<*col_1*> first.

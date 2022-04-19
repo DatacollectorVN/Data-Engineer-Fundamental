@@ -1,2 +1,4 @@
-SELECT ROUND(SQRT(POWER((MIN(lat_n) - MAX(lat_n)), 2) + POWER((MIN(long_w) - MAX(long_w)), 2)), 4) 
-FROM hackerrank.STATION
+USE hackerrank;
+SET @rowindex := -1; -- Assign -1 cause the index always start 0 (@index + 1)
+SELECT @rowindex := @rowindex + 1 AS rowindex, LAT_N
+FROM STATION
