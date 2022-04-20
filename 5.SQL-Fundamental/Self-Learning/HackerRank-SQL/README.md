@@ -99,3 +99,33 @@ Source [here](https://www.hackerrank.com/challenges/interviews/problem)
 *Explanation:*
 + We generate 3 *virtual tables* for solving this problem. First *virtual table* contains all necessary fields from 3 tables *Contest*, *Colleges* and *Challenges*. Second *virtual table* by transforming the *View_Stats* table with GROUP BY statement to calculate total of value. Third *virtual table* by transforming the *Submission_Stats* table with GROUP BY satemet to calculate total of value.
 + Concatenate 3 *virtual tables* above and use HAVING and ORDER BY to statisfy the requirements.
+
+## Problem 11: DATE data type (Hard level)
+Source [here](https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem)
+
+*Explaination:*
+
+Based on the requirements, we know the difficulty to find *number of hacker who submit everyday*. Read the sample table and sample output, we understand *submit everyday* mean the hacker must submit every day if miss only one day then this hacker is not incuded.
+
+The requirments have 3 independent problems that's we solve each problem independently. In this explantion, I just explain the problem to calculate *number of hacker who submit everyday*. Follow our steps:
+
+- Prepare 3 *virtual tables*. First table queries the distinct *submission_date* that table is used as the basement. Second table is used for combining with first table to generate the query results all information in the day. Third table used for combing with first table to generate the query results all information in the past of the day.
+- Result of first and second table. See in `Problem-11/no_hackers_submit_each_day.sql`:
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/VT1_and_VT2.png?raw=true" alt="drawing" width="600"/>
+</p>
+
+- Result of first and third table. See in `Problem-11/no_hackers_submit_each_day.sql`:
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/VT1_and_VT3.png?raw=true" alt="drawing" width="600"/>
+</p>
+
+- Result of first, second and third table and use DATEDIFF(). See in `Problem-11/no_unquie_hacker_submit_everyday.sql`:
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/VT1_VT2_and_VT3.png?raw=true" alt="drawing" width="600"/>
+</p>
+
+Other requirement, see in my solution `Problem-11/solution.sql`.

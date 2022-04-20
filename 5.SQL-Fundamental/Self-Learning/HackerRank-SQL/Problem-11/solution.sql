@@ -8,7 +8,7 @@ SELECT submission_date,
              FROM   Submissions_2 AS S3
              WHERE  S3.hacker_id = S2.hacker_id
              AND S3.submission_date < S1.submission_date
-	    ) = Datediff(S1.submission_date, @start_date)
+	    ) = DATEDIFF(S1.submission_date, @start_date)
        ) AS No_unquie_hacker_submit_everyday,
 
        (SELECT hacker_id FROM Submissions_2 S2
@@ -19,5 +19,6 @@ SELECT submission_date,
 
        (SELECT name FROM hackers
         WHERE  hacker_id = Max_submission
-       ) AS NAME
-FROM (SELECT DISTINCT submission_date FROM Submissions_2) S1
+       ) AS Name_hacker
+FROM (SELECT DISTINCT submission_date FROM Submissions_2) S1;
+
