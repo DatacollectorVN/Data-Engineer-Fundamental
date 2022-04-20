@@ -1,4 +1,4 @@
--- If like query all information at that time.
+-- If like query all information at that day.
 -- i.e index: 0 --> get all information of first day ('2016-03-01')
 -- 	   index: 2 --> get all information of third day ('2016-03-03')
 

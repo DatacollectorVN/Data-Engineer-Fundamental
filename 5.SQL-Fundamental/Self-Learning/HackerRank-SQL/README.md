@@ -93,7 +93,7 @@ Source [here](https://www.hackerrank.com/challenges/full-score/problem)
 
 + To query the hacker achieved full scores *for more than one challegne*, we applied COUNT() > 1.
 
-## Problem 10: GROUP BY and JOIN with multiple tables - 10 (Hard level)
+## Problem 10: GROUP BY and JOIN with multiple tables - 3 (Hard level)
 Source [here](https://www.hackerrank.com/challenges/interviews/problem)
 
 *Explanation:*

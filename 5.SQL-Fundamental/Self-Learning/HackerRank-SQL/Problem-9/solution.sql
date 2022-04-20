@@ -1,10 +1,9 @@
 USE hackerrank;
-SELECT m.hacker_id, h.name, SUM(score) AS total_score 
-FROM (SELECT hacker_id, challenge_id, MAX(score) AS score
-    FROM Submissions GROUP BY hacker_id, challenge_id
-) AS m
-INNER JOIN Hackers AS h
-ON m.hacker_id = h.hacker_id
-GROUP BY m.hacker_id, h.name
-HAVING total_score > 0
-ORDER BY total_score DESC, m.hacker_id;
+SELECT s.Hacker_Id, h.Name
+FROM submissions_1 AS s
+INNER JOIN Challenges AS c ON c.challenge_id = s.challenge_id 
+INNER JOIN Difficulty AS d ON d.difficulty_level = c.difficulty_level AND d.score = s.score
+INNER JOIN Hackers_1 AS h ON s.hacker_id = h.hacker_id 
+GROUP BY s.hacker_id, h.name
+HAVING count(s.score) > 1
+ORDER BY count(s.score) DESC, s.hacker_Id
