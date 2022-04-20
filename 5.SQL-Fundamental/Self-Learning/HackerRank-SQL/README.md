@@ -2,7 +2,10 @@
 This folder contains all my-own self-learning about SQL.
 
 # Hacker Rank SQL:
+[My-submission](https://docs.google.com/presentation/d/1djBnzdWQD2SitMVUpGcUZJLJpu0PK1o-X2CN5MQwOEw/edit?usp=sharing)
+
 *NOTE:* All SQL solutions, I used with MySQL tool.
+
 ## Problem 1: Pivot table
 Source [here](https://www.hackerrank.com/challenges/occupations/problem).
 
