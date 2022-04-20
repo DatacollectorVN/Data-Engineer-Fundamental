@@ -11,8 +11,8 @@ SELECT submission_date,
 	    ) = DATEDIFF(vt_1.submission_date, @start_date)
        ) AS No_unquie_hacker_submit_everyday,
 
-       (SELECT hacker_id FROM Submissions_2 AS temp_2
-        WHERE  temp_2.submission_date = vt_1.submission_date
+       (SELECT hacker_id FROM Submissions_2 AS temp_1
+        WHERE  temp_1.submission_date = vt_1.submission_date
         GROUP  BY hacker_id
         ORDER  BY Count(submission_id) DESC, hacker_id ASC LIMIT  1 
        ) AS Max_submission,
