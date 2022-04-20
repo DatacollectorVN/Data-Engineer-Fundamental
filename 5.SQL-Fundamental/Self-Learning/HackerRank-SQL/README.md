@@ -140,6 +140,14 @@ We can split the requirement into 2 small problems:
 We can convert it into the equavilent problem with easy to implent SQL code: *Include the student did **not** create the same numbe of challenges OR the student who create the largest number of challenges*.
 For easy to understand, we drew the *venn diagram:*
 
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/venn_diagram.png?raw=true" alt="drawing" width="600"/>
+</p>
+
 *P/S:* It look like *Discrete mathematics*, LOL
 
 - *Solving Problem 2:* *Include the student who create the largest number of challenges* see in `Problem-12/get_max_count_challenges.sql`. *Include the student did not create the same numbe of challenges* in figure below. See in `Problem-12/virtual_table_2.sql`.
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/from_VT1_to_VT2.png?raw=true" alt="drawing" width="600"/>
+</p>
