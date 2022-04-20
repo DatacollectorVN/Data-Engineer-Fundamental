@@ -1,14 +1,25 @@
 USE hackerrank;
-SELECT CH.hacker_id, H.name, COUNT(CH.challenge_id) AS count_ch
-FROM Hackers_3 AS H INNER JOIN Challenges_1 AS CH
-ON H.hacker_id = CH.hacker_id
-GROUP BY  H.hacker_id, H.name
-HAVING count_ch = (SELECT COUNT(*)
-	FROM Challenges_1 AS temp_1 
-    GROUP BY temp_1.hacker_id
-    ORDER BY COUNT(*) DESC LIMIT 1)
-OR count_ch NOT IN (SELECT COUNT(temp_2.challenge_id) 
-	FROM Challenges_1 AS temp_2
-    GROUP BY temp_2.hacker_id
-    HAVING temp_2.hacker_id <> CH.hacker_id)
-ORDER BY count_ch DESC, H.hacker_id
+SELECT h.hacker_id 
+     , h.name
+     , COUNT(*) AS count_challenges
+FROM hackers_3 as h
+     INNER JOIN Challenges_1 as c ON h.hacker_id=c.hacker_id
+GROUP BY h.hacker_id, h.name
+HAVING count_challenges = (SELECT MAX(vt_1.count_challenges)
+                            FROM(
+                                SELECT COUNT(*) AS count_challenges
+                                FROM Challenges_1
+                                GROUP BY hacker_id
+                                ) AS vt_1)
+
+-- If more than one student created the same number of challenges and the count is less than the maximum 
+-- number of challenges created, then exclude those students from the result. 
+OR count_challenges IN (SELECT vt_1.count_challenges 
+                          FROM(
+                              SELECT COUNT(*) AS count_challenges
+                              FROM Challenges_1
+                              GROUP BY hacker_id
+                              ) AS vt_1
+                              GROUP BY count_challenges
+                              HAVING COUNT(*) = 1) -- it is vt_2
+ORDER BY count_challenges DESC, h.hacker_id

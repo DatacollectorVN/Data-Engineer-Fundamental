@@ -129,3 +129,17 @@ The requirments have 3 independent problems that's we solve each problem indepen
 </p>
 
 Other requirement, see in my solution `Problem-11/solution.sql`.
+
+## Problem 11: GROUP BY ... with condition by using HAVING.
+source [here](https://www.hackerrank.com/challenges/challenges/problem)
+
+*Explanation:*
+We can split the requirement into 2 small problems:
+- *Problem 1:* Sorting results by the total number of challenges in descending order. If more than one student created the same number of challenges, then sort the result by hacker_id. This can easy to solve by ORDER BY statement. See in `Problem-12/sorting_all_count_challenges.sql`. Read again the priority rules with ORDER BY in **Problem-8**.
+- *Problem 2:* The requirement *If more than one student created the same number of challenges and the count is less than the maximum number of challenges created, then exclude those students from the result*. 
+We can convert it into the equavilent problem with easy to implent SQL code: *Include the student did **not** create the same numbe of challenges OR the student who create the largest number of challenges*.
+For easy to understand, we drew the *venn diagram:*
+
+*P/S:* It look like *Discrete mathematics*, LOL
+
+- *Solving Problem 2:* *Include the student who create the largest number of challenges* see in `Problem-12/get_max_count_challenges.sql`. *Include the student did not create the same numbe of challenges* in figure below. See in `Problem-12/virtual_table_2.sql`.
