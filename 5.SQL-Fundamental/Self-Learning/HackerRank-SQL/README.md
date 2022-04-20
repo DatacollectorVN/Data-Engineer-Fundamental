@@ -105,7 +105,7 @@ Source [here](https://www.hackerrank.com/challenges/15-days-of-learning-sql/prob
 
 *Explaination:*
 
-Based on the requirements, we know the difficulty to find *number of hacker who submit everyday*. Read the sample table and sample output, we understand *submit everyday* mean the hacker must submit every day if miss only one day then this hacker is not incuded.
+Based on the requirements, we know the difficulty problem is finding *number of hacker who submit everyday*. Read the sample table and sample output, we understand *submit everyday* mean the hacker must submit every day if miss only one day then this hacker is not incuded.
 
 The requirments have 3 independent problems that's we solve each problem independently. In this explantion, I just explain the problem to calculate *number of hacker who submit everyday*. Follow our steps:
 
