@@ -160,6 +160,11 @@ Source [here](https://www.hackerrank.com/challenges/sql-projects/problem).
 
 *Explaination:*
 - Genreate 2 *virtual tables* with one contains all Start_Date of project and another one contains all End_Date of project. Example in the figure below, see in `Problem-13/virtual_table_1.sql` and `Problem-13/virtual_table_2.sql`.
+
+<p align = "center">
+    <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/INNER_LEFT_RIGHT_JOIN.png?raw=true" alt="drawing" width="700"/>
+</p>
+
 - Combine 2 *virtual tables* by CROSS JOIN. Because the CROSS JOIN perform like *Cartesian Join* then it generate the redunant rows so we applied some contrainsts with WHERE *\<condition>* and GROUP BY with aggrete function MIN().
 - To satisfy requriments by using ORDER BY with DIFFDATE() function.
 
