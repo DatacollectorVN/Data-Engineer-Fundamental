@@ -169,3 +169,8 @@ Source [here](https://www.hackerrank.com/challenges/sql-projects/problem).
 - To satisfy requriments by using ORDER BY with DIFFDATE() function.
 
 *Note:* In SQL langauge, We should generate the *virtual tables* and want to combine it using OUTTER / INNER / CROSS JOIN, we tried to solve this problem like the programming languages and struggled to much.
+
+## Problem 14: CASE \<WHEN...THEN> END
+Source [here](https://www.hackerrank.com/challenges/symmetric-pairs/problem).
+
+We explained it in `Problem-14/solution.sql`. Because it's easy for understand.
