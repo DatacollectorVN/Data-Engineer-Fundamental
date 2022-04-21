@@ -73,7 +73,7 @@ Source [here](https://www.hackerrank.com/challenges/the-report/problem).
 + Use `CASE WHEN`, see in `Problem-7/other_solution.sql`.
 
 ## Problem 8: GROUP BY and JOIN with multiple tables - 1
-Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
+Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem).
 
 *Explanation:*
 + In the **Submissions** table, it have multiple duplication of both *hacker_id* and *challenge_id* columns because some hacker want to improve their score such as *hacker_id* = 4806 and *challenge_id* = 49593 have twice *score* with the second *scorce* improves from 32 to 76. That's why we must create the *Virtual table* from **Submissions** table by GROUP BY *hacker_id* and *challenge_id*.
@@ -83,7 +83,7 @@ Source [here](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 *Note:* The sorting algorithm in ORDER BY have the priority rules with ORDER BY \<*col_1*>, \<*col_2*>. The algorithm will priority to sort the \<*col_1*> first.
 
 ## Problem 9: GROUP BY and JOIN with multiple tables - 2
-Source [here](https://www.hackerrank.com/challenges/full-score/problem)
+Source [here](https://www.hackerrank.com/challenges/full-score/problem).
 
 *Explanation:*
 + Integrate all fields that we need, use INNER JOIN with 4 tables - See the figure below. 
@@ -97,14 +97,14 @@ Source [here](https://www.hackerrank.com/challenges/full-score/problem)
 + To query the hacker achieved full scores *for more than one challegne*, we applied COUNT() > 1.
 
 ## Problem 10: GROUP BY and JOIN with multiple tables - 3 (Hard level)
-Source [here](https://www.hackerrank.com/challenges/interviews/problem)
+Source [here](https://www.hackerrank.com/challenges/interviews/problem).
 
 *Explanation:*
 + We generate 3 *virtual tables* for solving this problem. First *virtual table* contains all necessary fields from 3 tables *Contest*, *Colleges* and *Challenges*. Second *virtual table* by transforming the *View_Stats* table with GROUP BY statement to calculate total of value. Third *virtual table* by transforming the *Submission_Stats* table with GROUP BY satemet to calculate total of value.
 + Concatenate 3 *virtual tables* above and use HAVING and ORDER BY to statisfy the requirements.
 
 ## Problem 11: DATE data type (Hard level)
-Source [here](https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem)
+Source [here](https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem).
 
 *Explaination:*
 
@@ -133,7 +133,7 @@ The requirments have 3 independent problems that's we solve each problem indepen
 
 Other requirement, see in my solution `Problem-11/solution.sql`.
 
-## Problem 11: GROUP BY ... with condition by using HAVING.
+## Problem 12: GROUP BY ... with condition by using HAVING.
 source [here](https://www.hackerrank.com/challenges/challenges/problem)
 
 *Explanation:*
@@ -154,3 +154,13 @@ For easy to understand, we drew the *venn diagram:*
 <p align = "center">
     <img src="https://github.com/DatacollectorVN/Data-Engineer-Fundamental/blob/master/5.SQL-Fundamental/Self-Learning/HackerRank-SQL/Public-imgs/from_VT1_to_VT2.png?raw=true" alt="drawing" width="700"/>
 </p>
+
+## Problem 13: OUTTER / INNER / CROSS JOIN with one table to generate new insight.
+Source [here](https://www.hackerrank.com/challenges/sql-projects/problem).
+
+*Explaination:*
+- Genreate 2 *virtual tables* with one contains all Start_Date of project and another one contains all End_Date of project. Example in the figure below, see in `Problem-13/virtual_table_1.sql` and `Problem-13/virtual_table_2.sql`.
+- Combine 2 *virtual tables* by CROSS JOIN. Because the CROSS JOIN perform like *Cartesian Join* then it generate the redunant rows so we applied some contrainsts with WHERE *\<condition>* and GROUP BY with aggrete function MIN().
+- To satisfy requriments by using ORDER BY with DIFFDATE() function.
+
+*Note:* In SQL langauge, We should generate the *virtual tables* and want to combine it using OUTTER / INNER / CROSS JOIN, we tried to solve this problem like the programming languages and struggled to much.
