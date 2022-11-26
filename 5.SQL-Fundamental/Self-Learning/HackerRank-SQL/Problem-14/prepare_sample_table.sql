@@ -1,0 +1,11 @@
+USE hackerrank;
+CREATE TABLE IF NOT EXISTS Functions(
+	X INT,
+    Y INT
+);
+INSERT INTO Functions VALUES (20, 20);
+INSERT INTO Functions VALUES (20, 20);
+INSERT INTO Functions VALUES (20, 21);
+INSERT INTO Functions VALUES (23, 22);
+INSERT INTO Functions VALUES (22, 23);
+INSERT INTO Functions VALUES (21, 20);

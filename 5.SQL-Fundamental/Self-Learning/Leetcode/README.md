@@ -15,3 +15,5 @@ Problem [here](https://leetcode.com/problems/department-top-three-salaries/)
 
 ### Problem 5 - Rank Scores
 Problem [here](https://leetcode.com/problems/rank-scores/)
+
+### Problem 6 - Get N highest salary
